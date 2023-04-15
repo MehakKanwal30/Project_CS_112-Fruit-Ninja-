@@ -1,0 +1,30 @@
+1- Windows 10.
+2- Resolution 1920x1080.
+3- Open Visual Studio Comunity 2019 (16.10.1).
+4- Create an empty project in a location feasible to you. The name of the project must be "Fruit Slicer".
+5- Extract the given zip file and place the Fruit Slicer folder from the extracted, to the same location as the .sln file inside the new project folder, replace existing file.
+6- Close and open visual studio again.
+7- You should be able to see all the cpp files on the list displayed.
+8- On the top bar change x86 to x64.
+9- Right click on the Fruit Slicer project, open properties, click on C/C++, click on Additional Include Directories (the first option), click arrow on the right of it, click edit.
+10- A popup should open, if any existing locations are present in the first block, select and delete them all.
+11- Now click on the orange folder button (New Line), then the three dots and browse for the given SDL folders in the zip file.
+12- Open include and add this folder from all 4 SDL folders (SDL, SDL_image, SDL_ttf, SDL_music), then click on ok.
+13- Now click on linker, click on Additional Library Directories (10th option), click arrow on the right of it, click edit.
+14- A popup should open, if any existing locations are present in the first block, select and delete them all.
+15- Now click on the orange folder button (New Line), then the three dots and browse for the given SDL folders in the zip file.
+16- Open lib, then x64, and add this folder from all 4 SDL folders (SDL, SDL_image, SDL_ttf, SDL_music), then click on ok.
+17- Click the drop down button beside linker, then click on input, click Additional Dependencies (the first option), click arrow on the right of it, click edit.
+18- A popup should open, if any existing values are present in the first block, select and delete them all.
+19- Write the following exactly as written here
+	SDL2.lib
+	SDL2main.lib
+	SDL2_image.lib
+	SDL2_ttf.lib
+	SDL2_mixer.lib
+20- After writing all the above, click ok.
+21- Click apply and then ok again.
+22- Now click on the build button on the top bar and select rebuild solution.
+23- After it is done with the build process, click "Local Windows Debugger" on the top bar.
+24- The game should run successfully.
+25- Enjoy :)
